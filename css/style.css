@@ -178,6 +178,6 @@ body{
     font-size: 2.5vw;
     text-align: center;
 
-    border: solid 3px #602a9b;
-    border-radius: 30px;
+    border: solid #602a9b;
+    border-radius: 1000px;
 }
