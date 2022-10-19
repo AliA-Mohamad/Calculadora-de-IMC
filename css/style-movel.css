@@ -1,0 +1,60 @@
+.boxCalcu{
+    width: 90%;
+    height: 25%;
+
+
+    left: 50%;
+    top: 17%;
+}
+
+.alturatx{
+    left: 15%;
+    font-size: 6vw;
+
+    top: 30%;
+}
+
+.alturain{
+    width: 25%;
+    height: 15%;
+    left: 45%;
+    top: 30%;
+
+    border: solid 5px #4f1585;
+    font-size: 5vw;
+}
+
+.pesotx{
+    left: 15%;
+    top: 70%;
+
+    font-size: 6vw;
+}
+
+.pesoin{
+    width: 25%;
+    height: 15%;
+    left: 45%;
+    top: 70%;
+
+    border: solid 5px #4f1585;
+    font-size: 5vw;
+}
+
+.botaoCalcu{
+    width: 30%;
+    height: 30%;
+    left: 80%;
+    top: 50%;
+
+    border: solid 5px #4f1585;
+    font-size: 4.5vw;
+}
+
+.boxResult{
+    width: 90%;
+    height: 10%;
+    left: 50%;
+    top: 50%;
+
+}

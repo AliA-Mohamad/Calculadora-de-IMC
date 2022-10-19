@@ -4,8 +4,6 @@
 
 body{
     background-color: rgb(25 22 34);
-    height: 100%;
-    width: 100%;
 }
 .boxCalcu{
     position: absolute;
@@ -150,6 +148,7 @@ body{
     border-radius: 3vw;
     transition: box-shadow 0.5s;
 }
+
 .boxResult:hover{
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px #911cff;
 }
@@ -180,4 +179,10 @@ body{
 
     border: solid #602a9b;
     border-radius: 1000px;
+}
+
+@media screen and (max-width: 400px) {
+    .boxResult{
+        top: 10px;
+    }
 }
