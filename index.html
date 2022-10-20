@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>IMC - TropaDoCalvo</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" media="(max-width: 980px)" href="css/style-movel.css">
+        <link rel="stylesheet" media="screen and (min-width: 850px)" href="css/style.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +15,24 @@
         <main>
             <div class="boxCalcu">
                 <p class="alturatx">Altura</p>
-                <input type="text" placeholder="00.0" class="alturain">
+                <input id="nunAltura" type="text" placeholder="00.0" class="alturain" maxlength="5">
                 <p class="pesotx">Peso</p>
-                <input type="text" placeholder="00.0" class="pesoin">
-                <button class="botaoCalcu">Calcular</button>
+                <input id="nunPeso" type="text" placeholder="00.0" class="pesoin" maxlength="5">
+                <button id="botaoCalcular" class="botaoCalcu">Calcular</button>
             </div>
             
             <div class="boxResult">
                 <p class="resul"> Resultado </p>
-                <p class="resultado">0.00</p>
+                <input class="resultado" type="number" id="nunResultado" value="0.00" readonly maxlength="3"></input>
+            </div>
+
+            <div class="boxBar">
+                <div class="progresViw">
+                    <span class="valorProgresso">0%</span>
+                    <div class="progresMask"></div>
+                </div>
             </div>
         </main>
+        <script src="js/base.js"></script>
     </body>
 </html>

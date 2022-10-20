@@ -167,6 +167,8 @@ body{
 .resultado{
     position: absolute;
     transform: translate(-50%, -50%);
+    background: transparent;
+    display: block;
     left: 50%;
     top: 60%;
     width: 29%;
@@ -176,13 +178,89 @@ body{
     font-family: var(--font-style);
     font-size: 2.5vw;
     text-align: center;
+    outline: none;
 
     border: solid #602a9b;
     border-radius: 1000px;
 }
 
-@media screen and (max-width: 400px) {
-    .boxResult{
-        top: 10px;
-    }
+.boxBar{
+    position: absolute;
+    width: 35%;
+    height: 45%;
+
+    top: 68%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+    background-color: #201b2d;
+    border-radius: 30px;
+    transition: box-shadow 0.5s;
+}
+.boxBar:hover{
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px #911cff;
+}
+
+.progresViw{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background: conic-gradient(#ff0000 40deg, #d9ff00 90deg, #3cff00 180deg, #d9ff00 270deg, #ff0000 300deg);
+}
+
+.progresViw::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #201b2d;
+}
+
+
+.valorProgresso{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #201b2d;
+
+    color: white;
+    font-family: var(--font-style);
+    font-size: 2vw;
+}
+
+.progresMask{
+    z-index: 1;
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background: conic-gradient(#ffffff00 180deg, #201b2d 0deg);
+}
+
+.progresMask::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #201b2d;
 }
