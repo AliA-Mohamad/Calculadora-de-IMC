@@ -210,11 +210,10 @@ body{
     transform: translate(-50%, -50%);
 
     border-radius: 50%;
-    background: conic-gradient(#ff0000 40deg, #d9ff00 90deg, #3cff00 180deg, #d9ff00 270deg, #ff0000 300deg);
+    background: conic-gradient(#ff0000 58deg, #d9ff00 158deg, #3cff00 211deg, #d9ff00 226deg, #ff0000 259deg);
 }
 
 .progresViw::before{
-    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -235,6 +234,10 @@ body{
 
     background-color: #201b2d;
 
+    pointer-events: none;
+    text-decoration: none;
+    text-align: center;
+    display: block;
     color: white;
     font-family: var(--font-style);
     font-size: 2vw;
@@ -250,7 +253,7 @@ body{
     transform: translate(-50%, -50%);
 
     border-radius: 50%;
-    background: conic-gradient(#ffffff00 180deg, #201b2d 0deg);
+    background: conic-gradient(#ffffff00 0deg, #201b2d 0deg);
 }
 
 .progresMask::before{
