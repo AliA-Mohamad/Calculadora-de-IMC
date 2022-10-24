@@ -23,6 +23,8 @@ botaoCalcular.addEventListener("click", () => {
     nunResultado.value = parseFloat(nunPeso.value) / (parseFloat(nunAltura.value) ** 2)
     nunResultado.value = parseFloat(nunResultado.value).toFixed(2)
     progressoCircular.style.background = "conic-gradient(#ffffff00 0deg , #201b2d 0deg)"
+    valorProgresso.style.pointerEvents = "none";
+    valorProgresso.href = "";
     valorProgresso.textContent = "-"
     valorProgresso.pointer = "all"
     valorProgresso.style.color = "white"
@@ -48,21 +50,33 @@ function roda(){
 
             if(npeso < 18.5){
                 valorProgresso.textContent = "Abixo do peso";
+                valorProgresso.style.pointerEvents = "all";
+                valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "yellow"
             } if(18.5 <= npeso & npeso < 24.9){
                 valorProgresso.textContent = "Peso normal";
+                valorProgresso.style.pointerEvents = "all";
+                valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "lime"
             } if(25.0 <= npeso & npeso < 29.9){
                 valorProgresso.textContent = "Sobre peso";
+                valorProgresso.style.pointerEvents = "all";
+                valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "yellow"
             } if(30.0 <= npeso & npeso < 34.9){
                 valorProgresso.textContent = "Obesidade Classe I";
+                valorProgresso.style.pointerEvents = "all";
+                valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "red"
             } if(35.0 <= npeso & npeso < 39.9){
                 valorProgresso.textContent = "Obesidade Classe II";
+                valorProgresso.style.pointerEvents = "all";
+                valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "red"
             } if(npeso >= 40){
                 valorProgresso.textContent = "Obesidade Classe III";
+                valorProgresso.style.pointerEvents = "all";
+                valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "red"
             }
 
