@@ -49,26 +49,26 @@ function roda(){
         if(valorProgressoAtual == valorMaximo || mediaPeso < valorProgressoAtual){
 
             if(npeso < 18.5){
-                valorProgresso.textContent = "Abixo do peso";
+                valorProgresso.textContent = "Abaixo do peso";
                 valorProgresso.style.pointerEvents = "all";
-                valorProgresso.href = "https://www.google.com";
+                valorProgresso.href = "https://www.youtube.com/watch?v=aY9AwV7C-ug";
                 valorProgresso.style.color = "yellow"
-            } if(18.5 <= npeso & npeso < 24.9){
+            } if(18.5 <= npeso & npeso < 24.99){
                 valorProgresso.textContent = "Peso normal";
                 valorProgresso.style.pointerEvents = "all";
                 valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "lime"
-            } if(25.0 <= npeso & npeso < 29.9){
-                valorProgresso.textContent = "Sobre peso";
+            } if(25.0 <= npeso & npeso < 29.99){
+                valorProgresso.textContent = "Sobrepeso";
                 valorProgresso.style.pointerEvents = "all";
                 valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "yellow"
-            } if(30.0 <= npeso & npeso < 34.9){
+            } if(30.0 <= npeso & npeso < 34.99){
                 valorProgresso.textContent = "Obesidade Classe I";
                 valorProgresso.style.pointerEvents = "all";
                 valorProgresso.href = "https://www.google.com";
                 valorProgresso.style.color = "red"
-            } if(35.0 <= npeso & npeso < 39.9){
+            } if(35.0 <= npeso & npeso < 39.99){
                 valorProgresso.textContent = "Obesidade Classe II";
                 valorProgresso.style.pointerEvents = "all";
                 valorProgresso.href = "https://www.google.com";
