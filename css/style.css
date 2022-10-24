@@ -5,12 +5,25 @@
 body{
     background-color: rgb(25 22 34);
 }
+
+.top{
+    position: absolute;
+    background-color: #201b2d;
+    width: 100%;
+    height: 10%;
+    transition: box-shadow 0.3s;
+}
+
+.top:hover{
+    box-shadow: 0px 6px 30px 0px #540d977a;
+}
+
 .boxCalcu{
     position: absolute;
-    width: 35%;
-    height: 80%;
+    width: 30%;
+    height: 75%;
 
-    top: 50%;
+    top: 55%;
     left: 30%;
     transform: translate(-50%, -50%);
 
@@ -19,19 +32,19 @@ body{
     transition: box-shadow 0.5s;
 }
 .boxCalcu:hover{
-    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px #911cff;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 4px 20px 0px #911cff8e;
 }
 
 .alturatx{
     display: flex;
     position: absolute;
     top:20%;
-    left:20%;
+    left:25%;
     transform: translate(-50%, -50%);
 
     font-family: var(--font-style);
     color: white;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 .alturain{
     position: absolute;
@@ -67,12 +80,12 @@ body{
     display: flex;
     position: absolute;
     top: 50%;
-    left:20%;
+    left:25%;
     transform: translate(-50%, -50%);
 
     font-family: var(--font-style);
     color: white;
-    font-size: 3vw
+    font-size: 2.5vw
 }
 
 .pesoin{
@@ -137,10 +150,10 @@ body{
 
 .boxResult{
     position: absolute;
-    width: 35%;
+    width: 30%;
     height: 30%;
 
-    top: 25%;
+    top: 32%;
     left: 70%;
     transform: translate(-50%, -50%);
 
@@ -150,7 +163,7 @@ body{
 }
 
 .boxResult:hover{
-    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px #911cff;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 4px 20px 0px #911cff8e;
 }
 
 .resul{
@@ -186,25 +199,25 @@ body{
 
 .boxBar{
     position: absolute;
-    width: 35%;
-    height: 45%;
+    width: 30%;
+    height: 40%;
 
-    top: 68%;
+    top: 70%;
     left: 70%;
     transform: translate(-50%, -50%);
 
     background-color: #201b2d;
-    border-radius: 30px;
+    border-radius: 3vw;
     transition: box-shadow 0.5s;
 }
 .boxBar:hover{
-    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px #911cff;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 4px 20px 0px #911cff8e;
 }
 
 .progresViw{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 16vw;
+    height: 16vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -246,8 +259,8 @@ body{
 .progresMask{
     z-index: 1;
     position: absolute;
-    width: 202px;
-    height: 202px;
+    width: 102%;
+    height: 102%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
