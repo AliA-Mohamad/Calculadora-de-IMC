@@ -56,7 +56,7 @@ function roda(){
             } if(18.5 <= npeso & npeso < 24.99){
                 valorProgresso.textContent = "Peso normal";
                 valorProgresso.style.pointerEvents = "all";
-                valorProgresso.href = "https://www.google.com";
+                valorProgresso.href = "normal.html";
                 valorProgresso.style.color = "lime"
             } if(25.0 <= npeso & npeso < 29.99){
                 valorProgresso.textContent = "Sobrepeso";
