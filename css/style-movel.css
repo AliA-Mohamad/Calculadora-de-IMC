@@ -2,6 +2,8 @@
     --font-style: 'Nunito Sans', sans-serif;
 }
 
+*{padding: 0; margin: 0;}
+
 body{
     background-color: #191622;
 }
@@ -10,28 +12,31 @@ body{
     position: absolute;
 
     width: 100%;
-    height: 8%;
+    height: 20vw;
 
-    background-color: #201b2d;
 }
 
 .titulo{
     position: absolute;
     transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
     left: 50%;
     top: 50%;
 
     color: white;
-    font-size: 5vw;
+    font-size: 7vw;
     font-family: var(--font-style);
 }
+
+
 
 .boxCalcu{
     position: absolute;
     width: 90%;
-    height: 200px;
+    height: 55vw;
 
-    top: 35%;
+    top: max(20vw, 50vw);
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -55,7 +60,7 @@ body{
     position: absolute;
     top: 25%;
     left: 70%;
-    height: 10%;
+    height: 15%;
     width: 30%;
     padding: 0.5%;
     transform: translate(-50%, -50%);
@@ -65,10 +70,9 @@ body{
     border-radius: 1000px;
     outline: none;
 
-
     color: white;
     font-family: var(--font-style);
-    font-size: 2.5vw;
+    font-size: 5.5vw;
     text-align: center;
 }
 
@@ -81,14 +85,14 @@ body{
 
     font-family: var(--font-style);
     color: white;
-    font-size: 2.5vw
+    font-size: 8vw
 }
 
 .pesoin{
     position: absolute;
     top: 50%;
     left: 70%;
-    height: 10%;
+    height: 15%;
     width: 30%;
     padding: 0.5%;
     transform: translate(-50%, -50%);
@@ -101,7 +105,7 @@ body{
 
     color: white;
     font-family: var(--font-style);
-    font-size: 2.5vw;
+    font-size: 5.5vw;
     text-align: center;
 }
 
@@ -129,16 +133,175 @@ body{
     background-color: #3e1763;
 }
 
-.boxResult{
+/* resultado */
+
+.info{
+    z-index: 3;
+    position: absolute;
+    top: 92vw;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    border: solid 0.2vw #911cff;
+    background: #201b2d;
+}
+
+.info:hover ~ .resultado{
+    color: #201b2d;
+    border-color: #201b2d;
+}
+
+.info:hover ~ .resul{
+    color: #201b2d;
+}
+
+.info:hover ~ .infotx{
+    z-index: 2;
+    color: white;
+}
+
+.infoC{
+    position: absolute;
+    width: 100%;
+    color: rgb(187, 187, 187);
+    text-align: center;
+    cursor:default;
+    font-size: 5vw;
+    font-family: var(--font-style);
+}
+
+.infotx {
+    position: absolute;
+    z-index: 1;
+    top: 166vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+    font-size: 3vw;
+    color:#201b2d;
+    text-align: center;
+    font-family: var(--font-style);
+    transition: color 0.5s;
+}
+
+
+.resul{
+    color: whitesmoke;
+    font-family: var(--font-style);
+    font-size: 7vw;
+    z-index: 1;
+
+    position: absolute;
+    top: 160vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.5s;
+}
+
+.resultado{
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    left: 50%;
+    top: 175vw;
+    width: 25%;
+    height: 15px;
+    padding: 2.5%;
+
+    color:white;
+    font-family: var(--font-style);
+    font-size: 5vw;
+    text-align: center;
+    outline: none;
+
+    border: solid #602a9b;
+    border-radius: 7vw;
+    transition: color 0.5s, border 0.5s;
+}
+
+
+
+
+.boxBar{
     position: absolute;
     width: 90%;
-    height: 30%;
+    height: 100vw;
 
-    top: 90%;
+    top: 135vw;
     left: 50%;
     transform: translate(-50%, -50%);
 
     background-color: #201b2d;
-    border-radius: 3vw;
-    transition: box-shadow 0.5s;
+    border-radius: 30px;
+}
+
+.progresViw{
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background: conic-gradient(#ff0000 58deg, #d9ff00 158deg, #3cff00 211deg, #d9ff00 226deg, #ff0000 259deg);
+}
+
+.progresViw::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #201b2d;
+}
+
+
+.valorProgresso{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #201b2d;
+
+    pointer-events: none;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: var(--font-style);
+    font-size: 7vw;
+}
+
+.progresMask{
+    z-index: 1;
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background: conic-gradient(#ffffff00 0deg, #201b2d 0deg);
+}
+
+.progresMask::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #201b2d;
 }
